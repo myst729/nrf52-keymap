@@ -14,7 +14,7 @@ INC_FOLDERS += .
 # 配置文件文件名
 CONFIG_H = config.h
 CONFIG_H_DIR = .
-SRC_FILES += keymap_plain.c
+SRC_FILES += keymap_plain.c user_evt.c
 
 include ./rules.mk
 
@@ -22,8 +22,6 @@ purge:
 	-rm -rf $(OUTPUT_DIR)
 
 go: purge ch554 package merge_bootloader_all
-
-all: default ch554
 
 include $(APP_PROJ_DIR)/kbd.mk
 include $(USB_SOURCE_DIR)/usb.mk
