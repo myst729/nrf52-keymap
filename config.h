@@ -4,12 +4,12 @@
 
 /* Device */
 #define VENDOR_ID 0xDE29 /* USB VID */
-#define PRODUCT_ID 0xD703 /* USB PID */
+#define PRODUCT_ID 0xD705 /* USB PID */
 #define CONF_VENDOR_ID 0x9A29 /* 配置项目内显示的VendorID */
-#define CONF_PRODUCT_ID 0x9703 /* 配置项目内显示的ProductID */
+#define CONF_PRODUCT_ID 0x9705 /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0001 /* 硬件版本 */
 #define MANUFACTURER "Leo Deng" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "Caroline" /* 硬件名称，用于USB和蓝牙显示 */
+#define PRODUCT "Ethereal" /* 硬件名称，用于USB和蓝牙显示 */
 #define DEVICE_BLE_APPEARANCE BLE_APPEARANCE_HID_KEYBOARD
 // #define MACADDR_SEPRATOR '_' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
