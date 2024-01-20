@@ -1,1 +1,5 @@
-# nrf52-keymap
+# lot42
+
+```shell
+make go
+```
