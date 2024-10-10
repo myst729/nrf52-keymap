@@ -21,7 +21,7 @@
 #define MATRIX_ROWS 5 /* 硬件阵列行数 */
 #define MATRIX_COLS 16 /* 硬件阵列列数 */
 static const uint8_t row_pin_array[MATRIX_ROWS] = { 5, 7, 3, 6, 11 };
-static const uint8_t column_pin_array[MATRIX_COLS] = { 9, 26, 13, 12, 8, 4, 16, 24, 20, 19, 17, 18, 29, 28, 27, 25 };
+static const uint8_t column_pin_array[MATRIX_COLS] = { 9, 26, 13, 12, 8, 4, 16, 24, 20, 19, 17, 18, 29, 15, 27, 25 };
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 // #define COL_IN // 键盘阵列的二极管方向是从ROW->COL
 // #define MATRIX_HAS_GHOST /* 按键阵列是否出现Ghost Key，若没有加二极管则需要启用这个项目 */
