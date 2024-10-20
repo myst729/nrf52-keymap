@@ -17,7 +17,7 @@
 #define MATRIX_ROWS 5 /* 硬件阵列行数 */
 #define MATRIX_COLS 16 /* 硬件阵列列数 */
 static const uint8_t row_pin_array[MATRIX_ROWS] = { 5, 7, 3, 6, 11 };
-static const uint8_t column_pin_array[MATRIX_COLS] = { 9, 26, 13, 12, 8, 4, 16, 24, 20, 19, 17, 18, 29, 28, 27, 25 };
+static const uint8_t column_pin_array[MATRIX_COLS] = { 9, 26, 13, 12, 8, 4, 16, 24, 20, 19, 17, 18, 29, 31, 27, 25 };
 #define ROW_IN
 #define DEBOUNCE 5 /* 硬件消抖次数，设置为0则不消抖 */
 #define MATRIX_SCAN_DELAY_CYCLE 48 /* 按键扫描等待IO稳定的延时时长 */
