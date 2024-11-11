@@ -14,7 +14,7 @@ INC_FOLDERS += .
 # 配置文件文件名
 CONFIG_H = config.h
 CONFIG_H_DIR = .
-SRC_FILES += keymap_plain.c user_evt.c
+SRC_FILES += keymap_plain.c # user_evt.c
 
 include ./rules.mk
 
