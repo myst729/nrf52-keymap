@@ -4,12 +4,12 @@
 
 /* Device */
 #define VENDOR_ID 0xDE29 /* USB VID */
-#define PRODUCT_ID 0xD703 /* USB PID */
+#define PRODUCT_ID 0xD704 /* USB PID */
 #define CONF_VENDOR_ID 0x9A29 /* 配置项目内显示的VendorID */
-#define CONF_PRODUCT_ID 0x9703 /* 配置项目内显示的ProductID */
-#define DEVICE_VER 0x0002 /* 硬件版本 */
+#define CONF_PRODUCT_ID 0x9704 /* 配置项目内显示的ProductID */
+#define DEVICE_VER 0x0001 /* 硬件版本 */
 #define MANUFACTURER "Leo Deng" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "Ethereal" /* 硬件名称，用于USB和蓝牙显示 */
+#define PRODUCT "Clover" /* 硬件名称，用于USB和蓝牙显示 */
 #define DEVICE_BLE_APPEARANCE BLE_APPEARANCE_HID_KEYBOARD
 // #define MACADDR_SEPRATOR '_' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
@@ -119,12 +119,12 @@ static const uint8_t column_pin_array[MATRIX_COLS] = { 4, 5, 6, 7, 8, 18, 19, 9,
 #define APP_TIMER_CONFIG_RTC_FREQUENCY 0 // RTC预分频器: [0] 32768Hz, [1] 16384Hz, [3] 8192Hz, [7] 4096Hz, [15] 2048Hz, [31] 1024Hz
 
 /* Onboard CMSIS DAP */
-// #define SWD_CLK_IO T2EX
-// #define SWD_CLK_MASK bT2EX
-// #define SWD_CLK_PORT P1
-// #define SWD_DAT_IO T2
-// #define SWD_DAT_MASK bT2
-// #define SWD_DAT_PORT P1
+#define SWD_CLK_IO T2EX
+#define SWD_CLK_MASK bT2EX
+#define SWD_CLK_PORT P1
+#define SWD_DAT_IO T2
+#define SWD_DAT_MASK bT2
+#define SWD_DAT_PORT P1
 
 /* Disable Action Features */
 // #define NO_ACTION_LAYER
