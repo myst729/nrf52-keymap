@@ -100,9 +100,8 @@ jobs:
         cp template/Makefile.posix.template template/Makefile.posix
         sed -i "s/\/usr\/local/\/tmp/g" template/Makefile.posix
         cp template/Makefile.posix SDK/components/toolchain/gcc/Makefile.posix
-        cd SDK/external/micro-ecc/nrf52hf_armgcc/armgcc/ && make
-        cd ../../nrf52nf_armgcc/armgcc/ && make
-        cd ../../../../../
+        make -C SDK/external/micro-ecc/nrf52hf_armgcc/armgcc/
+        make -C SDK/external/micro-ecc/nrf52nf_armgcc/armgcc/
         rm -r tmk/tmk_core/protocol/usb_hid/USB_Host_Shield_2.0-tmk/
         cd tmk/ && git reset --hard
         cd ../
